@@ -1,5 +1,5 @@
 # internship
-![Screenshot](screenshot1.jpg)
-![Screenshot](screenshot2.jpg)
-![Screenshot](screenshot3.jpg)
-![Screenshot](screenshot4.jpg)
+<img src="screenshot1.jpg" width="350" title="screenshot1">
+<img src="screenshot2.jpg" width="350" title="screenshot1">
+<img src="screenshot3.jpg" width="350" title="screenshot1">
+<img src="screenshot4.jpg" width="350" title="screenshot1">
