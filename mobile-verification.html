@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HURRY!! HUNGER DON'T WAIT</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<!-- main body -->
+	<div class="container-fluid" id="container">
+		<!-- section 1 -->
+		<div class="row">
+			<img src="assets/bg_2_3.png" class="img-fluid site-cover-img w-100" id="bg-img">
+			<div class="text-center">
+				<img src="assets/object_3.png" id="cover-icon">
+			</div>
+		</div>
+		<!-- section 1 end -->
+		<!-- section 2  -->
+		<div class="login-wrapper">
+			<div class="text-center">
+				<div class="login-txt">
+					<p class="login-cover-txt pb-3">LOGIN</p>
+				</div>
+			</div>
+			<!-- mobile number field -->
+			<div class="text-center">
+				<form class="form-vertical">
+					<div class="form-group">
+						<p class="label mobile-input-txt" for="mobile-input">Enter Your Mobile Number</p>
+						<input type="number" name="" class="cbutton2" placeholder="Mobile Number" id="mobile-input">
+					</div>
+				</form>
+			</div>
+
+			<!-- verify otp field -->
+			<div class="text-center mt-5 pt-5">
+				<div class="verify-otp-txt">
+					<p class="login-cover-txt pb-3">VERIFY OTP</p>
+				</div>
+			</div>
+			<div class="text-center">
+				<form class="form-vertical">
+					<div class="form-group">
+						<p class="label mobile-input-txt" for="mobile-input">OTP Sent to 9898989898</p>
+						<input type="number" name="" maxlength="6" min="0"  max="6" class="cbutton2" id="partitioned" onKeyDown="validateNum(event, this)">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-6 col-lg-6">
+								<a href="" class="label mobile-input-txt">Change Mobile Number</a>
+							</div>
+							<div class="col-md-6 col-sm-6 col-6 col-lg-6">
+								<p class="label auto-detect-txt">Auto-Detect in 00:00 <a href="">RESEND</a></p>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="cbutton text-white font-weight-bold get-started-txt" style="background-color:#f79837;">PROCEED</button>
+				</form>
+			</div>
+			<!-- mobile verify field end -->
+		</div>
+		<!-- section 2 end -->
+	</div>
+	<!-- main body end -->
+</body>
+<script type="text/javascript">
+	function validateNum(event, input) {
+	  event.preventDefault();
+	  var currVal = input.value ? input.value : "";
+	  // Checks if the key pressed is a number and the right length
+	  if(!isNaN(event.key) && currVal.length < 6){
+	    input.value = currVal + event.key;
+	  }
+	  // Backspace functionality
+	  else if(event.keyCode == 8 && currVal > 0) {
+	    input.value = input.value.slice(0, -1);
+	  }  
+	}
+</script>
+</html>
